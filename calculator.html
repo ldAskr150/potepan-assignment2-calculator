@@ -1,0 +1,59 @@
+<!-- 数字を一桁だけ消したい場合はどうすればいいのか -->
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+        content="width=device-width,initial-scale=1.0">
+      <script src="https://code.jquery.com/jquery-3.2.1.js" 
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
+        crossorigin="anonymous">
+      </script>  
+      <link rel="stylesheet" href="calculator.css">
+      <title>calculator</title>
+    </head>
+ 
+    <body>
+      <h3>Calculator</h3>
+        <!-- ここに記述していきましょう！ -->
+      <table border="1" cellspacing="5">
+        <thead>
+          <tr>
+            <th id="result" colspan="4">0</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button onclick="clickButton(this)" class="number">7</button></td>
+            <td><button onclick="clickButton(this)" class="number">8</button></td>
+            <td><button onclick="clickButton(this)" class="number">9</button></td>
+            <td><button onclick="clickButton(this)" class="operator">/</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="clickButton(this)" class="number">4</button></td>
+            <td><button onclick="clickButton(this)" class="number">5</button></td>
+            <td><button onclick="clickButton(this)" class="number">6</button></td>
+            <td><button onclick="clickButton(this)" class="operator">*</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="clickButton(this)" class="number">1</button></td>
+            <td><button onclick="clickButton(this)" class="number">2</button></td>
+            <td><button onclick="clickButton(this)" class="number">3</button></td>
+            <td><button onclick="clickButton(this)" class="operator">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="clickButton(this)" class="number">0</button></td>
+            <td><button onclick="clickButton(this)" class="number">00</button></td>
+            <td><button onclick="clickButton(this)" id="point">.</button></td>
+            <td><button onclick="clickButton(this)" class="operator">+</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button onclick="clickButton(this)" id="clear">AC</button></td>
+            <td colspan="2"><button onclick="clickButton(this)">=</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <script src="calculator.js"></script>
+    </body>
+  </html>

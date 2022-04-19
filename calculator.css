@@ -1,0 +1,19 @@
+th {
+  height: 50px;
+}
+
+td {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+#result {
+  text-align: right;
+  padding-right: 10px;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+}
